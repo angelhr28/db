@@ -30,8 +30,9 @@ create table clientes(
     creatd_at timestamp not null default current_timestamp,
     updated_at timestamp not null default current_timestamp on update current_timestamp
 );
-El created_at para nosotros es inmodificable y se inserta una vez se realiza un registro, palabras más o palabras menos para nosotros es la fecha de creación o de inserción del registro
-El update_at nos sirve para realizar muchas interpretaciones como el factor de seguridad
+--El created_at para nosotros es inmodificable y se inserta una vez se realiza un registro, 
+  palabras más o palabras menos para nosotros es la fecha de creación o de inserción del registro
+--El update_at nos sirve para realizar muchas interpretaciones como el factor de seguridad
 
 create table operations (
     operation_id integer unsigned primary key auto_increment,
